@@ -2,7 +2,7 @@ const ROUTES = [
     {
         url: '/user',
         proxy: {
-            target: "http://humix-user-api.user.svc.cluster.local",
+            target: "http://humix-user-api.user.svc.cluster.local:8080",
             changeOrigin: true,
             pathRewrite: {
                 [`^/user`]: '',
@@ -12,7 +12,7 @@ const ROUTES = [
     {
         url: '/album',
         proxy: {
-            target: "http://humix-album-api.album.svc.cluster.local",
+            target: "http://humix-album-api.album.svc.cluster.local:8080",
             changeOrigin: true,
             pathRewrite: {
                 [`^/album`]: '',
