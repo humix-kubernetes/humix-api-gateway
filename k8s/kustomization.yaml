@@ -9,4 +9,4 @@ namespace: gateway
 images:
 - name: humix-api-gateway
   newName: blgianinis/humix-api-gateway
-  newTag: a137e90c06d79d0e94f3bd53daeaebbe62d50d7f
+  newTag: 037936496de8cfb3953e1e54b765793c0dea29dd
