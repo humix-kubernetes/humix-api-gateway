@@ -31,6 +31,10 @@ app.all("/<route-name>/*", (req: Request, res: Response, next: NextFunction) => 
     });
 });
 
+app.get("/", (req: Request, res: Response) => {
+    res.status(200).json({message: "ok"})
+})
+
 app.use(function(err: any, req: Request, res: Response, next: NextFunction) {
   console.error(err.stack); 
   res.status(500).send('Something broke!'); 
